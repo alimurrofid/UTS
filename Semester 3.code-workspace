@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"path": "../../../../Users/alimu/belajar java/Semester 3"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../../Users/alimu/belajar java/Python"
+		}
+	],
+	"settings": {
+		"java.project.sourcePaths": [
+			"src"
+		],
+		"java.project.outputPath": "bin",
+		"java.project.referencedLibraries": [
+			"lib/**/*.jar"
+		],
+		"liveServer.settings.multiRootWorkspaceName": "dasarWeb",
+		"livePreview.defaultPreviewPath": "c:\\xampp\\htdocs\\dasarWeb\\landingpage\\simpleLandingPage.html"
+	}
+}

@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'monserat',sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    /* width: 100%; */
+    /* min-height: 100vh; */
+    background: linear-gradient(#2b1055,#7597de);
+}
+/* === navbar === */
+header{
+ position: absolute;   
+ top: 0;
+ left: 0;
+ width: 100%;
+ padding: 30px 100px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ z-index: 3;
+}
+header .logo{
+    color: #486eaf;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #7597c5;
+    border-radius: 20px;
+}
+header ul li a:hover,
+section a:hover
+{
+    background: #486eaf;
+    color: #ffff;
+    font-weight: bold;
+}
+/* === tampilan depan === */
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section img{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+#text{
+position: absolute;
+color: #ffff;
+white-space: nowrap;
+font-size: 50px;
+
+}
+#btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #ffff;
+    color: #2b1055;
+    font-size: 20px;
+    transform: translateY(100px);
+    z-index: 9;
+}
+
+/* === About === */
+.container{
+    width: 1200px;
+    margin: 210px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+
+}
+.deskripsi{
+    color: #ffff;
+    width: 50%;
+    text-align: justify;
+    margin-right: 100px;
+}
+.deskripsi-foto{
+    width: 450px;
+    margin-top: 30px;
+}
+h2{
+    text-align: center;
+}
+
+/* === Famous === */
+h1{
+text-align: center;
+color: #ffff;
+margin-top: 200px;
+margin-bottom: 20px;
+}
+.container-famous{
+width: 1100px;
+border: 2px solid white;
+background-color:rgba(20,20,20,0.5);
+margin: 0 auto;
+display: flex;
+flex-wrap: wrap;
+}
+.famous-foto{
+    width: 219px;
+}
+.card{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.img-title{
+/* kalau ganti arah */
+position: absolute;
+width: 100%;
+height: 100%;
+background-image: linear-gradient(to bottom, rgba(5,5,5,0),rgba(5,5,5,1));
+top: 219px;
+transition: all 0.5s ease-in;
+
+}
+.img-title p,h3{
+text-align: center;
+color: #ffff;
+line-height: 30px;
+position: relative;
+top: 130px;
+text-shadow: 1px 1px rgba(5, 5, 5, 0.7);
+}
+.card:hover .img-title{
+    /* kalau ganti arah */
+    top: 0;
+    transition: all 0.5s ease-out;
+}
+.card img{
+transform: scale(1);
+transition: all 0.3s ease-out;
+}
+.card:hover img{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in;
+}
+
+/* === Galery === */
+.content{
+    width: 790px;
+    margin: 10px auto;
+    border: 5px solid white;
+    overflow: auto;
+    line-height: 0;
+}
+.jumbo{
+    width: 780px;
+}
+.thumb{
+    width: 195px;
+    float: left;
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+.thumb:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/* === Footer === */
+footer{
+line-height: 2;
+background-color: #486eaf; 
+width: 100%;
+padding: 20px;
+color: #ffff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* text-align: center; */
+}
+.footer-content h3{
+font-size: 20px;
+}
+.footer-content p{
+    font-size: 14px;   
+}
+.socials ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+.socials ul li a{
+    margin: 0 10px;
+    text-decoration: none;
+}
+/* img.sosmed-logo:hover{
+    color: #2b1055;
+    transition: 2s;
+    cursor: pointer;
+
+} */
+.sosmed-logo{
+    width: 28px;
+}
+.footer-bottom{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: 0.4;
+    font-weight: 200;
+}
